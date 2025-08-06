@@ -1,0 +1,155 @@
+.header {
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background-color: white;
+
+  border-bottom: solid rgb(202, 201, 201);
+  border-bottom-width: 1px;
+
+  z-index: 1;
+}
+
+/* left section*/
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+
+}
+
+.youtube-logo {
+  width: 80px;
+
+}
+
+/* middle section*/
+.middle-section {
+  flex: 1;
+  /*keep stretchin container stretchin*/
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  /*keep search bar stretchin with container*/
+  height: 36px;
+  padding-left: 10px;
+  border: solid rgb(208, 207, 207);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.1);
+  border-color: rgb(195, 193, 193);
+  border-width: 1px;
+  width: 0;
+  /* here width: 0; is used to remove default width of the search bar and force it become as samll as possible when screen becomes smaller. note that this property is not activated when flex:1 is applied and the screen becomes bigger*/
+}
+
+.search-bar::placeholder {
+  font-family: roboto;
+  font-size: 15px;
+}
+
+.search-icon {
+  height: 30px;
+  width: 40px;
+}
+
+.search-btn {
+  width: 60px;
+  height: 40px;
+  border-color: rgb(152, 148, 148);
+  margin-left: -1px;
+  margin-right: 10px;
+  border-width: 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-btn div {
+  background-color: gray;
+  color: white;
+  padding: 4px 2px 4px 2px;
+
+  position: absolute;
+  top: 40px;
+  left: 13px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search-btn:hover div {
+  opacity: 1;
+}
+
+.search-voice-icon {
+  height: 25px;
+  width: 25px;
+  border: none;
+}
+
+.search-voice-btn {
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+/* right section*/
+.right-section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.upload-icon {
+  width: 25px;
+}
+
+.apps-icon {
+  width: 25px;
+}
+
+.notif-icon {
+  width: 25px;
+}
+
+.prof-img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.notif-container {
+  position: relative;
+}
+
+.notif-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: rgb(220, 6, 6);
+  border-radius: 50%;
+  padding: 1px 4px 1px 4px;
+  font-size: 10px;
+  color: white;
+}

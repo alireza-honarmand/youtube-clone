@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube.com Clone</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="styles/generals.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/videos.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+      <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+    </div>
+    <div class="middle-section">
+      <input type="text" placeholder="Search" class="search-bar">
+      <button class="search-btn"><img class="search-icon" src="icons/search.svg" alt="">
+        <div>Search</div>
+      </button>
+      <button class="search-voice-btn"><img class="search-voice-icon" src="icons/voice-search-icon.svg" alt=""></button>
+    </div>
+    <div class="right-section">
+      <img class="upload-icon" src="icons/upload.svg" alt="">
+      <img class="apps-icon" src="icons/youtube-apps.svg" alt="">
+      <div class="notif-container">
+        <img class="notif-icon" src="icons/notifications.svg" alt="">
+        <div class="notif-number">3</div>
+      </div>
+      <img class="prof-img" src="channel-info/my-channel.jpg" alt="">
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <div class="sidebar-item">
+      <img src="icons/home.svg" alt="">
+      <p>Home</p>
+    </div>
+    <div class="sidebar-item">
+      <img src="icons/explore.svg" alt="">
+      <p>Explore</p>
+    </div>
+    <div class="sidebar-item">
+      <img src="icons/subscriptions.svg" alt="">
+      <p>Subscriptions</p>
+    </div>
+    <div class="sidebar-item">
+      <img src="icons/originals.svg" alt="">
+      <p>Originals</p>
+    </div>
+    <div class="sidebar-item">
+      <img src="icons/youtube-music.svg" alt="">
+      <p>YouTube Music</p>
+    </div>
+    <div class="sidebar-item">
+      <img src="icons/library.svg" alt="">
+      <p>Library</p>
+    </div>
+  </nav>
+
+  <main>
+      <section class="video-grid">
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                  <div class="vid-time">14:20</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-1.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                      <p class="video-author">Marques Brownlee</p>
+                      <p class="video-info">3.4M views &#183; 6 months ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                  <div class="vid-time">5:11</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-2.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Try Not To Laugh Challenge #9
+                      </p>
+                      <p class="video-author">Markiplier</p>
+                      <p class="video-info">9M views &#183; 4 years ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+                  <div class="vid-time">6:03</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-3.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Crazy Tik Toks Taken Moments Before DISASTER
+                      </p>
+                      <p class="video-author">SSSniperWolf</p>
+                      <p class="video-info">12M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+                  <div class="vid-time">39:12</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-4.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                      </p>
+                      <p class="video-author">Veritasium</p>
+                      <p class="video-info">18M views &#183; 4 months ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+                  <div class="vid-time">41:17</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-5.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Kadane's Algorithm to Maximum Sum Subarray Problem
+                      </p>
+                      <p class="video-author">CS Dojo</p>
+                      <p class="video-info">519K views &#183; 5 years ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+                  <div class="vid-time">1:53</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-6.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Anything You Can Fit In The Circle I’ll Pay For
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-7.jpg">
+                  <div class="vid-time">11:33</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-2.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Man vs. Nature: Alone in the River
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-8.jpg">
+                  <div class="vid-time">3:44</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-1.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Man Ignites Fire with His Mouth!
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-9.jpg">
+                  <div class="vid-time">12:44</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-3.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Majestic Tree Standing Tall in Nature
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-10.jpg">
+                  <div class="vid-time">24:01</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-2.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Pure Beauty of Untouched Nature
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-11.jpg">
+                  <div class="vid-time">1:03</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-4.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Deep in Work Mode
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-12.jpg">
+                  <div class="vid-time">33:02</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-5.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Busy Day at the Office
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-13.jpg">
+                  <div class="vid-time">15:09</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-5.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Anything You Can Fit In The Circle I’ll Pay For
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-14.jpg">
+                  <div class="vid-time">34:03</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-3.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Lost in the Music
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-15.jpg">
+                  <div class="vid-time">10:11</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-6.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Trends That Define Style
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-16.jpg">
+                  <div class="vid-time">14:39</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-2.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Elegance in Every Step
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-17.jpg">
+                  <div class="vid-time">1:53</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-6.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Joyful Moments Made Simple
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-18.jpg">
+                  <div class="vid-time">2:32</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-4.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Style Meets Happiness
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-19.jpg" >
+                  <div class="vid-time">17:51</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-5.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Where Elegance Shines Bright
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="video-preview">
+              <div class="vid-img-container">
+                  <img class="thumbnail" src="thumbnails/thumbnail-20.jpg" >
+                  <div class="vid-time">7:13</div>
+              </div>
+              <div class="video-info-grid">
+                  <div class="channel-picture">
+                      <img class="channel-profile" src="channel-info/channel-3.jpeg" alt="">
+                  </div>
+                  <div class="channel-info">
+                      <p class="video-title">
+                          Chic Stroll by the Shore
+                      </p>
+                      <p class="video-author">MrBeast</p>
+                      <p class="video-info">141M views &#183; 1 year ago</p>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+  </main>
+
+
+
+</body>
+
+</html>
